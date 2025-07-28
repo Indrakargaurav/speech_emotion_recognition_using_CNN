@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffe3b3, #ffcc80); /* Soft Peach Gradient */
+    color: #444; /* Softer color for readability */
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    color: #ff7f50; /* Coral color for headings */
+}
+
+/* Paragraph style */
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Button group style */
+.button-group {
+    margin: 30px 0;
+}
+
+/* General button styles */
+.btn {
+    background: linear-gradient(90deg, #ffa751, #ff6f61); /* Vibrant gradient */
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover and active states for buttons */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+/* Alternative button style (GitHub-like button) */
+.btn.github {
+    background: linear-gradient(90deg, #42e695, #3bb2b8); /* Teal gradient for alternative buttons */
+}
+
+/* Audio preview dialog styling */
+.audio-preview-dialog {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Audio preview specific styles */
+.audio-preview-dialog audio {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.audio-preview-dialog h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #ff7f50; /* Coral color for the title */
+}
+
+/* Style for the result button inside the dialog */
+.audio-preview-dialog .btn {
+    background: linear-gradient(90deg, #42e695, #3bb2b8);
+    margin-top: 15px
+}
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    overflow-y: visible;
+    width: 100vw;
+  }
+  
+  .navbar-title {
+    flex-grow: 1;
+    font-weight: bold;
+  }
+  
+  /* Main Banner */
+  .main-banner {
+    background-image: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+    text-align: center;
+    max-height: calc(100vh - 64px);
+    margin-top: 600px;
+    padding: 7rem 5rem 35rem;
+    box-sizing: border-box;
+  }
+  
+  .main-banner-title {
+    font-weight: bold;
+  }
+  
+  .upload-button {
+    background: linear-gradient(90deg, #42e695, #3bb2b8);
+    color: white;
+    margin-right: 2rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .record-button {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .record-button.recording {
+    background: red;
+  }
+  
+  .record-button.stopped {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  }
+  
+  /* Features Section */
+  .features-section {
+    margin-top: 5rem;
+  }
+  
+  .features-title {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .feature-card {
+    text-align: center;
+    padding: 3rem;
+    height: 200px;
+  }
+  
+  .feature-card img {
+    width: 80px;
+    margin: 0 auto;
+  }
+  
+  .feature-card-title {
+    font-weight: bold;
+  }
+  
+  /* Dialog */
+  .dialog {
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .dialog-button {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 3rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 5rem;
+    background: #f9f9f9;
+  }
+  
+  .footer-text {
+    color: #555;
+  }
+  
+  .footer-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer-button {
+    text-transform: none;
+  }
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  
+    

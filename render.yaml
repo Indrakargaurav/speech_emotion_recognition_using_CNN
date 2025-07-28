@@ -1,0 +1,58 @@
+services:
+  # Node.js Backend Service
+  - type: web
+    name: ser-node-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_PORT
+        value: 10000
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://your-frontend-domain.vercel.app
+      - key: COOKIE_SECURE
+        value: true
+      - key: COOKIE_HTTPONLY
+        value: true
+      - key: COOKIE_SAMESITE
+        value: none
+
+  # Flask ML API Service
+  - type: web
+    name: ser-flask-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FLASK_APP
+        value: app.py
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: false
+      - key: FLASK_PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        value: https://your-frontend-domain.vercel.app
+      - key: MODEL_PATH
+        value: ./cnn_telugu.pth
+      - key: UPLOAD_FOLDER
+        value: uploads
+
+  # MongoDB Database
+  - type: pserv
+    name: ser-mongodb
+    env: docker
+    plan: free
+    image: mongo:latest
+    envVars:
+      - key: MONGO_INITDB_DATABASE
+        value: userAuth 
