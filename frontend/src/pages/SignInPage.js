@@ -24,7 +24,7 @@ function SignInPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000';
+    const serverUrl = 'https://ser-node-backend.onrender.com';
     const response = await fetch(`${serverUrl}/api/auth/signin`, {
       method: "POST",
       headers: {

@@ -94,7 +94,7 @@ const HomePage = () => {
       formData.append("file", audioFile);
   
       // Backend request to analyze the emotion
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const apiUrl = 'https://speech-emotion-recognition-using-cnn.onrender.com';
       const response = await axios.post(`${apiUrl}/api/analyze-emotion`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
